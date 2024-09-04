@@ -14,6 +14,7 @@ Here's an example of how to use this action in your GitHub Actions workflow:
 
 - name: Cancel active Garbage Collection
   uses: oventskovich/docr-cancel-gc@v1
+```
 
 ## License
 
