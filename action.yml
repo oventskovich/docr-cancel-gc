@@ -1,0 +1,13 @@
+name: Cancel Active Garbage Collection
+description: "A GitHub Action to cancel a currently active DigitalOcean container registry garbage collection using doctl."
+author: "Aleh Ventskovich, oleg1995petrov@gmail.com"
+runs:
+  using: "composite"
+  steps:
+    - name: Cancel currently active garbage collection
+      run: ${{ github.action_path }}/entrypoint.sh
+      shell: bash
+
+branding:
+  icon: "trash"
+  color: "red"
